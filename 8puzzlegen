@@ -1,0 +1,13 @@
+initial_array=[3,4,8,1,0,5,2,6,7]
+goal_array=[1,2,3,4,5,6,7,8,0]
+
+initial_state=[initial_array[i:i+3] for i in range(0,9,3)]
+goal_state=[goal_array[i:i+3]for i in range(0,9,3)]
+
+print("Initial State")
+for row in initial_state:
+    print(row)
+
+print("Goal State")
+for row in goal_state:
+    print(row)
