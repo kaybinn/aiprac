@@ -1,0 +1,10 @@
+def board(queens):
+  board = [['.'for _ in range(8)]for _ in range(8)]
+  for row,col in enumerate(queens):
+    board[row][col]= 'Q'
+  for i in range(7,-1,-1):
+    print(f"{i+1} {' '.join(board[i])}")
+  print("  a b c d e f g h")
+
+queens=[2, 0, 3, 4, 7, 6, 5, 1]
+board(queens)
